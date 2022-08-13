@@ -24,7 +24,8 @@ ui <- pageWithSidebar(
       tabPanel("Data Table", dataTableOutput("datatable")),   # salida del data table
       
       tabPanel("Factores",
-               img(src ="cor_iris.png", width = 450, height = 450)     
+               img(src ="escenarioMomiosMax.png", width = 450, height = 450),
+               img(src ="escenarioMomiosPro.png", width = 450, height = 450)
       )
       
       #tabPanel("Summary", verbatimTextOutput("summary")),    # salida del Summary
