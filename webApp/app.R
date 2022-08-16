@@ -44,7 +44,7 @@ server <- function(input, output) {
   
   
 #################################################################
-  output$datatable <- renderDataTable( {matchdata <- read.csv("../match.data.csv")},       #Data table
+  output$datatable <- renderDataTable( {matchdata <- read.csv("match.data.csv")},       #Data table
                                        options = list(aLengthMenu = c(10,20,50), 
                                        iDisplayLength = 10) ) 
   #output$table <- renderTable({ data.frame(matchdata <- read.csv("../match.data.csv"))})   # Data Frame
