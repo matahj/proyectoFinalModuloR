@@ -17,19 +17,20 @@ ui <- pageWithSidebar(
                plotOutput("output_plot") 
       ),
       
-      tabPanel("Imágenes",
+      tabPanel("Imágenes Poswork 3",
                img(src ="cor_iris.png", width = 450, height = 450)     
       ), 
       
+      ##########################################
       tabPanel("Data Table", dataTableOutput("datatable")),   # salida del data table
-      
+      #tabPanel("Table", tableOutput("table")),               # salida de la tabla
+      ##########################################
       tabPanel("Factores",
                img(src ="escenarioMomiosMax.png", width = 450, height = 450),
                img(src ="escenarioMomiosPro.png", width = 450, height = 450)
       )
       
       #tabPanel("Summary", verbatimTextOutput("summary")),    # salida del Summary
-      #tabPanel("Table", tableOutput("table")),               # salida de la tabla
     )
   ))
 
@@ -41,13 +42,17 @@ server <- function(input, output) {
   output$output_plot <- renderPlot( {plot(as.formula(paste("Sepal.Length ~", input$x)),  #Gráficos de salida
                                           data = iris) })
   
-  output$summary <- renderPrint( {summary(iris)} )   # Summary
   
-  output$table <- renderTable({ data.frame(iris)})   # Data Frame
+#################################################################
+  output$datatable <- renderDataTable( {matchdata <- read.csv("../match.data.csv")},       #Data table
+                                       options = list(aLengthMenu = c(10,20,50), 
+                                       iDisplayLength = 10) ) 
+  #output$table <- renderTable({ data.frame(matchdata <- read.csv("../match.data.csv"))})   # Data Frame
+#################################################################  
   
-  output$datatable <- renderDataTable( {iris},       #Data table
-                                       options = list(aLengthMenu = c(10,20,50), iDisplayLength = 10) ) 
   
+  
+  #output$summary <- renderPrint( {summary(iris)} )   # Summary
 }
 
 # Run the application 
