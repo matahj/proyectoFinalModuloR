@@ -17,8 +17,10 @@ ui <- pageWithSidebar(
                plotOutput("output_plot") 
       ),
       
-      tabPanel("Imágenes Poswork 3",
-               img(src ="cor_iris.png", width = 450, height = 450)     
+      tabPanel("Imágenes",
+               img(src ="frel-equipolocal.png", width = 550, height = 350),  
+               img(src ="frel-equipovisitante.png", width = 550, height = 350), 
+               img(src ="probconjestimadas.png", width = 550, height = 350)      
       ), 
       
       ##########################################
