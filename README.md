@@ -10,8 +10,10 @@
 
 #### Integrantes
 
+1. 
 2. Jorge Mata H.
 3. Mario Altamirano
+4. 
 
 
 
