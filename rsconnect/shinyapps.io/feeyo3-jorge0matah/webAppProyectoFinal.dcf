@@ -5,9 +5,9 @@ account: feeyo3-jorge0matah
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 6781030
-bundleId: 6214581
+bundleId: 6214804
 url: https://feeyo3-jorge0matah.shinyapps.io/webAppProyectoFinal/
-when: 1660837512.87125
-lastSyncTime: 1660837512.87127
+when: 1660842169.14151
+lastSyncTime: 1660842169.14153
 asMultiple: FALSE
 asStatic: FALSE
