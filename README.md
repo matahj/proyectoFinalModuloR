@@ -10,7 +10,8 @@
 
 #### Integrantes
 
-* Mario Altamirano
-* Jorge Mata H.
+2.- Jorge Mata H.
+3.- Mario Altamirano
+
 
 
